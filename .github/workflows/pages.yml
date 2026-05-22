@@ -1,0 +1,44 @@
+name: Deploy DOONGRI site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - claude/sharp-galileo-UB0DY
+    paths:
+      - "doongri/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+# Allow the workflow to publish to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One concurrent Pages deployment; newer pushes supersede in-progress ones
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact (doongri/ as site root)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: doongri
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
