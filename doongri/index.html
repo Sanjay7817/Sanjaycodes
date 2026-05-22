@@ -86,60 +86,8 @@
   }
   </script>
 </head>
-<body>
+<body data-sticky-atc data-atc-name="ARSHMUKT KIT™" data-atc-price="From ₹1,499/mo">
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <!-- ===================== ANNOUNCEMENT BAR ===================== -->
-  <div class="announce" role="region" aria-label="Brand promises">
-    <div class="announce__track">
-      <span>Discreet plain-box delivery</span><span class="announce__dot">•</span>
-      <span>AYUSH GMP certified manufacturing</span><span class="announce__dot">•</span>
-      <span>Free 15-min Vaidya consultation with every kit</span><span class="announce__dot">•</span>
-      <span>Batch-level COA — each batch tested</span><span class="announce__dot">•</span>
-      <span>Made in India · Classical Ayurveda</span><span class="announce__dot">•</span>
-      <span>Discreet plain-box delivery</span><span class="announce__dot">•</span>
-      <span>AYUSH GMP certified manufacturing</span><span class="announce__dot">•</span>
-      <span>Free 15-min Vaidya consultation with every kit</span><span class="announce__dot">•</span>
-    </div>
-  </div>
-
-  <!-- ===================== HEADER / NAV ===================== -->
-  <header class="header" id="header">
-    <div class="container header__inner">
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
-        <span></span><span></span><span></span>
-      </button>
-
-      <a href="#main" class="brand" aria-label="DOONGRI home">
-        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
-          <path d="M3 31 L13 14 L19 23 L26 9 L37 31 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-          <circle cx="26" cy="9" r="2.4" fill="currentColor"/>
-          <path d="M3 31 H37" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-        </svg>
-        <span class="brand__name">DOONGRI<sup>™</sup></span>
-      </a>
-
-      <nav class="nav" id="navMenu" aria-label="Primary">
-        <a href="#kit">Shop</a>
-        <a href="#kit">ARSHMUKT KIT™</a>
-        <a href="#concern">Your Concern</a>
-        <a href="#ingredients">Ingredients</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#vaidya">Vaidya</a>
-        <a href="#subscribe">Subscribe</a>
-        <a href="#about">About</a>
-      </nav>
-
-      <div class="header__actions">
-        <a href="#vaidya" class="header__vaidya" data-evt="vaidya_cta_click">Talk to a Vaidya</a>
-        <button class="cart-btn" id="cartBtn" aria-label="Open cart">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 7h12l-1 12H7L6 7Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 7a3 3 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-          <span class="cart-count" id="cartCount">0</span>
-        </button>
-      </div>
-    </div>
-  </header>
-  <div class="nav-overlay" id="navOverlay" hidden></div>
 
   <main id="main">
 
@@ -407,7 +355,7 @@
             <span class="plan__summary-label">Your plan</span>
             <strong id="planSummary">Annual · ₹1,499/mo</strong>
           </div>
-          <button class="btn btn--gold btn--lg" id="addKit" data-evt="add_to_cart" data-product="kit">Add ARSHMUKT KIT™ →</button>
+          <button class="btn btn--gold btn--lg" id="addKit" data-evt="add_to_cart" data-product="kit" data-noauto>Add ARSHMUKT KIT™ →</button>
         </div>
         <p class="plan__fineprint">First-time customers: up to 10% one-time offer applied at checkout. Day-21 reminder + Day-28 dispatch. Cancel anytime.</p>
       </div>
@@ -556,7 +504,7 @@
           <div class="bundle__row bundle__row--big"><span>ARSHMUKT KIT™ price</span><strong>₹1,999</strong></div>
           <div class="bundle__row bundle__row--save"><span>You save</span><strong id="bundleSave">₹98</strong></div>
           <p class="bundle__note" id="bundleNote">All three selected — you unlock the full kit + Vaidya, Pathya, Yoga &amp; lifestyle stack.</p>
-          <button class="btn btn--primary btn--lg" id="bundleAdd" data-evt="add_to_cart" data-product="kit">Add Complete Kit →</button>
+          <button class="btn btn--primary btn--lg" id="bundleAdd" data-evt="add_to_cart" data-product="kit" data-noauto>Add Complete Kit →</button>
         </div>
       </div>
     </section>
@@ -662,7 +610,7 @@
     <!-- ===================== FINAL CTA ===================== -->
     <section class="final-cta section">
       <div class="container center">
-        <p class="hero__shloka" lang="hi">तेजल रसायन — प्राचीन ज्ञान × आधुनिक विज्ञान।</p>
+        <p class="hero__shloka" lang="hi">DOONGRI™ — प्राचीन ज्ञान × आधुनिक विज्ञान।</p>
         <h2 class="final-cta__title">Begin a healing journey worth trusting.</h2>
         <p class="lede light">Join 500+ on their journey — guided by a Vaidya, delivered discreetly.</p>
         <div class="hero__cta center">
@@ -673,82 +621,6 @@
     </section>
   </main>
 
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="footer">
-    <div class="container footer__grid">
-      <div class="footer__brand">
-        <a href="#main" class="brand brand--light" aria-label="DOONGRI home">
-          <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M3 31 L13 14 L19 23 L26 9 L37 31 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="26" cy="9" r="2.4" fill="currentColor"/><path d="M3 31 H37" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-          <span class="brand__name">DOONGRI<sup>™</sup></span>
-        </a>
-        <p class="footer__tagline" lang="hi">प्राचीन ज्ञान × आधुनिक विज्ञान</p>
-        <p class="footer__tagline">Ancient wisdom. Modern science.</p>
-      </div>
-      <nav class="footer__col" aria-label="Shop">
-        <h4>Shop</h4>
-        <a href="#kit">ARSHMUKT KIT™</a>
-        <a href="#secondary">Arshajit Cap</a>
-        <a href="#secondary">Regulex Churna</a>
-        <a href="#secondary">Sheetlep Ointment</a>
-        <a href="#subscribe">Subscribe &amp; Save</a>
-      </nav>
-      <nav class="footer__col" aria-label="Learn">
-        <h4>Learn</h4>
-        <a href="#ingredients">Ingredients</a>
-        <a href="#concern">Your Concern</a>
-        <a href="#vaidya">Meet a Vaidya</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#about">About &amp; Trust</a>
-      </nav>
-      <div class="footer__col">
-        <h4>Support</h4>
-        <a href="mailto:support@doongri.com">support@doongri.com</a>
-        <a href="#" data-evt="whatsapp_cta_click">WhatsApp us</a>
-        <a href="#">Shipping &amp; Returns</a>
-        <a href="#">Privacy (DPDP 2023)</a>
-        <a href="#">Track order</a>
-      </div>
-    </div>
-
-    <div class="container footer__disclaimer">
-      <p><strong>Disclaimer:</strong> DOONGRI™ products are Ayurvedic dietary/wellness formulations. Individual experiences may vary. Please consult a registered Vaidya before use. Not intended to diagnose, treat, cure, or prevent any disease. AYUSH approval: [Number] · For grievances: <a href="mailto:support@doongri.com">support@doongri.com</a></p>
-      <p class="footer__legal">© <span id="year">2026</span> DOONGRI™. A consumer brand. All rights reserved. · Compliance: D&amp;MR Act 1954 (Schedule J) · ASCI Code · Consumer Protection Act 2019 · DPDP 2023.</p>
-    </div>
-  </footer>
-
-  <!-- ===================== STICKY MOBILE ATC BAR ===================== -->
-  <div class="sticky-atc" id="stickyAtc" aria-hidden="true">
-    <div class="sticky-atc__info">
-      <span class="sticky-atc__name">ARSHMUKT KIT™</span>
-      <span class="sticky-atc__price" id="stickyPrice">₹1,499/mo</span>
-    </div>
-    <div class="sticky-atc__actions">
-      <a href="#subscribe" class="btn btn--outline btn--sm" data-evt="subscribe_selected">Subscribe &amp; Save</a>
-      <button class="btn btn--gold btn--sm" data-evt="sticky_atc_click" data-product="kit" id="stickyAdd">Add to Cart</button>
-    </div>
-  </div>
-
-  <!-- ===================== WHATSAPP WIDGET ===================== -->
-  <a class="wa" href="#" id="waBtn" aria-label="Chat with us on WhatsApp" data-evt="whatsapp_cta_click">
-    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.6 1.8 6.5L4 29l7.2-1.9c1.8 1 3.8 1.5 5.9 1.5 7 0 12.5-5.5 12.5-12.5S23 3 16 3Z" fill="currentColor"/><path d="M12 9.5c-.3-.7-.6-.7-.9-.7h-.8c-.3 0-.7.1-1 .5s-1.3 1.3-1.3 3.1 1.3 3.6 1.5 3.9c.2.3 2.6 4.1 6.4 5.6 3.1 1.2 3.8 1 4.5.9.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.4-.3-.8-.5s-2.2-1.1-2.6-1.2c-.3-.1-.6-.2-.8.2-.2.3-.9 1.2-1.1 1.4-.2.2-.4.3-.8.1s-1.6-.6-3-1.9c-1.1-1-1.9-2.2-2.1-2.6-.2-.3 0-.5.2-.7l.5-.6c.2-.2.2-.4.4-.6.1-.2.1-.4 0-.6s-.8-2-1.1-2.7Z" fill="#fff"/></svg>
-    <span class="wa__label">Chat with us</span>
-  </a>
-
-  <!-- ===================== CART DRAWER ===================== -->
-  <div class="drawer" id="cartDrawer" aria-hidden="true" role="dialog" aria-label="Your cart" aria-modal="true">
-    <div class="drawer__panel">
-      <div class="drawer__head"><h3>Your Cart</h3><button class="drawer__close" id="cartClose" aria-label="Close cart">×</button></div>
-      <ul class="drawer__items" id="cartItems"><li class="drawer__empty">Your cart is empty. Start your healing journey →</li></ul>
-      <div class="drawer__foot">
-        <div class="drawer__total"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div>
-        <p class="drawer__trust">100% Secure · Easy Returns · AYUSH Certified · Discreet box</p>
-        <button class="btn btn--gold btn--lg btn--block" data-evt="checkout_started">Checkout securely →</button>
-        <p class="drawer__pay">UPI · Cards · NetBanking · COD · Razorpay / Cashfree</p>
-      </div>
-    </div>
-  </div>
-  <div class="scrim" id="scrim" hidden></div>
-
   <!-- ===================== QUIZ MODAL ===================== -->
   <div class="quiz" id="quizModal" aria-hidden="true" role="dialog" aria-label="Find my kit quiz" aria-modal="true">
     <div class="quiz__panel">
@@ -758,9 +630,8 @@
     </div>
   </div>
 
-  <!-- toast -->
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-  <script src="script.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="quiz.js" defer></script>
+  <script src="home.js" defer></script>
 </body>
 </html>

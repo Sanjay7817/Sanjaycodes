@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1A3A2A" />
+  <title>Find Your Kit — Guided Wellness Quiz | DOONGRI™</title>
+  <meta name="description" content="Answer 5 quick, private questions and DOONGRI™ will recommend the right ARSHMUKT KIT™ subscription tier — plus a free 15-minute Vaidya pre-consultation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main">
+    <section class="page-hero center">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / <span>Your Concern</span></p>
+        <p class="eyebrow">Guided Recommendation</p>
+        <h1 class="page-hero__title">Find your kit.</h1>
+        <p class="page-hero__sub">Five quick, private questions. We'll suggest the right subscription tier and offer a free Vaidya pre-consultation — no browsing, no guesswork.</p>
+      </div>
+    </section>
+
+    <section class="quiz-page">
+      <div class="container">
+        <div class="quiz-page__card">
+          <div class="quiz__progress"><span class="quiz__bar" id="quizBar"></span></div>
+          <div class="quiz__stage" id="quizStage"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section center" style="padding-top:0">
+      <div class="container narrow">
+        <p class="results-vary">Your answers stay on this device. Recommendations are general wellness guidance, not a medical diagnosis. Please consult a registered Vaidya before use.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+  <script src="quiz.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var D = window.DOONGRI;
+      window.DoongriQuiz.init({
+        stage: document.getElementById("quizStage"),
+        bar: document.getElementById("quizBar"),
+        onApply: function (r) { location.href = (D ? D.base : "") + "subscribe.html#" + r.tier; },
+        onVaidya: function () { location.href = (D ? D.base : "") + "about.html#vaidya"; }
+      });
+    });
+  </script>
+</body>
+</html>
